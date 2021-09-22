@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+# Get started
 
-You can use the [editor on GitHub](https://github.com/gegewen/blog/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 2.1 Homogeneous case
+> The targeted reservoir is a 200m thick homogeneous reservoir with a permeability of 50mD. The reservoir is located 1500m below the ground surface with a 10m deep water table. The geothermal gradient of the location is 30 °C/km with an average surface temperature of 20 °C. We want to inject CO$_2$ at a rate of 1.5 MT/yr at the bottom half of the reservoir. How big will the plume be at 30 years?
 
-### Markdown
+#### Choose reservoir conditions:
+- Initial pressure at reservoir top (bar):
+$$P = \rho\mathbf{g}h = 1,000 \frac{kg}{m^3} \times9.8 \frac{N}{m^2}\times (1,500m - 10m) = 137 bar$$
+- Reservoir tempearture ($^\circ$C):
+$$T=T_{surface} + \frac{\Delta T}{\Delta h} \times h = 20^\circ C + 30\frac{^\circ C}{km}\times1.5km =65^\circ C$$
+- Reservoir thickness (m): $200m$
+#### Choose reservoir conditions:
+- Injection rate (MT/yr): $1.5MT/yr$
+- Depth to top of perforation (m): $100m$
+- Perforation thickness (m): $100m$
+#### Choose rock properties:
+- Irreducible water saturation: $0.2$
+- van Genucheten scaling factor: $0.5$
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gegewen/blog/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
